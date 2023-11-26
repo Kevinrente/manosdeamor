@@ -1,0 +1,359 @@
+/* Estilos General */
+
+:root {
+    --tranquil-blue: #6A8DA3;
+    --background-color: #F4F4F4;
+    --text-color: #2C2C2C;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  /* Header */
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--tranquil-blue);
+  }
+  
+  img {
+    width: 100px;
+    height: auto;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--background-color);
+    padding: 0.5rem;
+    margin-left: 1rem;
+  }
+  
+  nav a:hover {
+    color: var(--text-color);
+  }
+  
+  /* Estilos responsivos */
+  @media screen and (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+  
+    nav {
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 1rem;
+    }
+  }
+  /* Hero */
+  .icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://api.lorem.space/image/fashion?w=750&h=750');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(106, 141, 163, 0.7);
+    background-blend-mode: multiply;
+    color: var(--background-color);
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero .cta {
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--background-color);
+    color: var(--tranquil-blue);
+    border-radius: 4px;
+    font-weight: bold;
+    transition: transform 0.3s;
+  }
+  
+  .hero .cta:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    transform: scale(1.05);
+  }
+
+
+  /* Sección Categorías */
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+  }
+  
+  .categoria {
+    flex: 1;
+    max-width: 300px;
+    background-color: var(--background-color);
+    border: 1px solid var(--tranquil-blue);
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .categoria:hover {
+    transform: scale(1.05);
+  }
+  
+  .categoria a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+  }
+  
+  .categoria a:hover {
+    color: var(--tranquil-blue);
+  }
+
+  /* Galería de Imágenes */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+  }
+
+  
+  
+  .proyecto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+  }
+  
+  .proyecto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .proyecto a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .proyecto a:hover {
+    color: var(--tranquil-blue);
+  }
+
+  .proyecto:hover {
+    transform: scale(1.05);
+  }
+
+  /* Footer */
+
+.footer {
+    background-color: var(--tranquil-blue);
+    padding: 2rem;
+    color: var(--background-color);
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer a {
+    color: var(--background-color);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer a:hover {
+    color: var(--text-color);
+  }
+  
+  .redes-sociales {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .redes-sociales a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    color: var(--tranquil-blue);
+    width: 100px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .redes-sociales a:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+  }
+
+
+
+
+
+
+
+
+
+
+  /* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para la sección de comentarios */
+#comments-section {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para los títulos */
+#comments-section h2, #comments-section h3 {
+  color: #4a4a4a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el párrafo introductorio */
+#comments-section p {
+  color: #7a7a7a;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el formulario de comentarios */
+#comment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para los elementos del formulario */
+.form-group {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  color: #4a4a4a;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+  outline: none;
+  border-color: #4a4a4a;
+}
+
+.form-group button {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #4a4a4a;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #7a7a7a;
+}
+
+/* Estilos para la lista de comentarios */
+#comments-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para cada comentario */
+.comment {
+  width: 80%;
+  margin-bottom: 20px;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.comment .comment-author {
+  color: #4a4a4a;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.comment .comment-date {
+  color: #7a7a7a;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.comment .comment-content {
+  color: #4a4a4a;
+  text-align: justify;
+}
